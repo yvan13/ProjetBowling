@@ -1,4 +1,4 @@
-package fsim;
+package dcll.fsim;
 
 /**
  * Created by 21506032 on 07/03/2016.
@@ -37,5 +37,23 @@ public class Lancer {
                 chaine += val2;
         }
         return chaine;
+    }
+    public boolean isSTrike(){
+        return(val1==10);
+    }
+    public boolean isSpare(){
+        return(val1+val2==10);
+    }
+
+    public int getVal1(){
+        return val1;
+    }
+
+    public int getVal2(){
+        return val2;
+    }
+
+    public int getSomme(){
+        return val1+val2;
     }
 }
