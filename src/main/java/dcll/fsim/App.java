@@ -1,4 +1,4 @@
-package dcll.fsim;
+package fsim;
 
 /**
  * Hello world!
