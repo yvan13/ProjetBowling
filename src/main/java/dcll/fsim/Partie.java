@@ -39,9 +39,9 @@ public class Partie {
             }
             else {
                 if (((Lancer) lancers.get(i)).isSpare())
-                    score += 10 + ((Lancer) lancers.get(i+1)).getVal1()
+                    score += 10 + ((Lancer) lancers.get(i+1)).getVal1();
                 else{
-                    score += ((Lancer) lancers.get(9)).isSTrike().getSomme();
+                    score += ((Lancer) lancers.get(9)).getSomme();
                 }
             }
 
