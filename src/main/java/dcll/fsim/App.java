@@ -14,11 +14,12 @@ public class App
     {
         ArrayList<Lancer> lancers = new ArrayList<Lancer>();
 
-        /*for(int i=0;i<12;i++)
+        for(int i=0;i<11;i++)
         {
             lancers.add(new Lancer(10,0));
-        }*/
-        Partie p1 = new Partie();
+        }
+        lancers.add(new Lancer(9,1));
+        Partie p1 = new Partie(lancers);
         System.out.println(p1);
         System.out.println(p1.calculerScore());
     }
