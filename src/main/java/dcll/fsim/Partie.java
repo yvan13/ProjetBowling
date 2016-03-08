@@ -47,5 +47,6 @@ public class Partie {
 
 
         }
+        return score;
     }
 }
