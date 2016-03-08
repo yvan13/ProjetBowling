@@ -4,7 +4,7 @@ package dcll.fsim;
  * Created by 21506032 on 07/03/2016.
  */
 public class Lancer {
-
+ // coucou florine
     private int val1,val2;
 
     public Lancer(int lancer1, int lancer2){
