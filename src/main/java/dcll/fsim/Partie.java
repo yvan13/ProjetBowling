@@ -29,13 +29,22 @@ public class Partie {
         
         score=0;
     }
+    Partie(ArrayList<Lancer> l){
+        lancers = l;
+        score=0;
+    }
+
 
     public int calculerScore(){
-        for(int i=0;i<lancers.size();i++)
+        for(int i=0;i<10;i++)
         {
             if(((Lancer) lancers.get(i)).isSTrike())
             {
-                score += 10 + ((Lancer) lancers.get(i+1)).getSomme();
+                if(((Lancer) lancers.get(i+1)).isSTrike()){
+                    score += 20 + ((Lancer) lancers.get(i+2)).getVal1();
+                }else{
+                    score += 10 + ((Lancer) lancers.get(i+1)).getSomme();
+                }
             }
             else {
                 if (((Lancer) lancers.get(i)).isSpare())
@@ -44,9 +53,12 @@ public class Partie {
                     score += ((Lancer) lancers.get(9)).getSomme();
                 }
             }
-
-
         }
         return score;
+    }
+
+    public String toString(){
+        return lancers.toString()+"\n";
+
     }
 }

@@ -13,8 +13,8 @@ public class Lancer {
     }
 
     public Lancer(){
-        val1 = (int) Math.random()*(11);
-        val2 = (int) Math.random()*(11);
+        val1 = (int) (Math.random()*(11));
+        val2 = (int) (Math.random()*(10-val1));
     }
 
     public String toString(){
@@ -28,8 +28,12 @@ public class Lancer {
         }
         chaine += " ";
 
-        if(val2 == 0)
-            chaine+="_";
+        if(val2 == 0 ){
+            if(this.isSTrike())
+                chaine +="";
+            else
+                chaine += "_";
+        }
         else {
             if (val1 + val2 == 10)
                 chaine += "/";
