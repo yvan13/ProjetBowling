@@ -23,6 +23,7 @@ public class App
         System.out.println(p1);
         System.out.println(p1.calculerScore());
         System.out.println("BON ON TEST");
+        System.out.println("exigence 1 résolue");
 
     }
 }
