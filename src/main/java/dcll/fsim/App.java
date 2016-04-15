@@ -22,5 +22,7 @@ public class App
         Partie p1 = new Partie(lancers);
         System.out.println(p1);
         System.out.println(p1.calculerScore());
+        System.out.println("BON ON TEST");
+
     }
 }
